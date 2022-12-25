@@ -37,8 +37,10 @@ export default function Home({
 			</Head>
 			<main className={styles.main}>
 				<ul>
-					{trends.words.map(word => (
-						<li>
+					{trends.words.map((word, index) => (
+						<li
+							key={index}
+						>
 							{word.count}
 							{' '}
 							{word.word}
